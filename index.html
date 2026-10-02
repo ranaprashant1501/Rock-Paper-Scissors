@@ -21,9 +21,9 @@
         <!-- Active Choosing State -->
         <div class="player-panel" id="user-choice-container">
             <div class="images">
-                <img id="user-rock" class="choice" src="IMAGE/rock.png" alt="Rock">
-                <img id="user-paper" class="choice" src="IMAGE/paper.png" alt="Paper">
-                <img id="user-scissors" class="choice" src="IMAGE/scissors.png" alt="Scissor">
+                <img id="user-rock" class="user-choice" src="IMAGE/rock.png" alt="Rock">
+                <img id="user-paper" class="user-choice" src="IMAGE/paper.png" alt="Paper">
+                <img id="user-scissors" class="user-choice" src="IMAGE/scissors.png" alt="Scissor">
             </div>
             <p class="message">Choose One</p>
         </div>
@@ -31,7 +31,7 @@
         <!-- Hidden Result State -->
         <div class="player-panel hide" id="user-result-container">
             <div class="images">
-                <img id="user-result-img" class="choice" src="IMAGE/rock.png" alt="Rock">
+                <img id="user-result-img" class="user-choice" src="IMAGE/rock.png" alt="Rock">
             </div>
             <p class="message" id="user-result-msg">You Won</p>
         </div>
@@ -40,9 +40,9 @@
         <!-- Active Choosing State -->
         <div class="player-panel" id="computer-choice-container">
             <div class="images">
-                <img id="comp-rock" class="choice" src="IMAGE/rock.png" alt="Rock">
-                <img id="comp-paper" class="choice" src="IMAGE/paper.png" alt="Paper">
-                <img id="comp-scissors" class="choice" src="IMAGE/scissors.png" alt="Scissor">
+                <img id="comp-rock" class="computer-choice" src="IMAGE/rock.png" alt="Rock">
+                <img id="comp-paper" class="computer-choice" src="IMAGE/paper.png" alt="Paper">
+                <img id="comp-scissors" class="computer-choice" src="IMAGE/scissors.png" alt="Scissor">
             </div>
             <p class="message">Computer will Automatically Choose</p>
         </div>
@@ -50,7 +50,7 @@
         <!-- Hidden Result State -->
         <div class="player-panel hide" id="computer-result-container">
             <div class="images">
-                <img id="comp-result-img" class="choice" src="IMAGE/rock.png" alt="Rock">
+                <img id="comp-result-img" class="computer-choice" src="IMAGE/rock.png" alt="Rock">
             </div>
             <p class="message" id="comp-result-msg">Computer Lost</p>
         </div>
@@ -71,8 +71,11 @@
         </div>
     </div>
 
-    <!-- RESET BUTTON -->
-    <button id="reset" class="hide">Reset Game</button>
+    <!-- BUTTON -->
+     <div id="buttons">
+         <button id="play-again" class="button hide">Play Again</button>
+         <button id="reset" class="button hide">Reset Game</button>
+     </div>
 
     <script src="app.js"></script>
 </body>

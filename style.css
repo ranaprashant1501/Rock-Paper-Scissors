@@ -67,12 +67,19 @@ body {
     background-color: azure;
 }
 
-.choice {
+.user-choice {
     height: 160px;
     width: 160px;
     border-radius: 50%;
     object-fit: cover;
     cursor: pointer; /* Added so users know they can click */
+}
+
+.computer-choice {
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+    object-fit: cover;
 }
 
 /* Ensure computer choices don't look clickable before the result */
@@ -100,7 +107,13 @@ body {
     gap: 1rem; /* Added gap to space out the word "You:" and the number "0" */
 }
 
-#reset {
+
+#buttons{
+    display: flex;
+    gap: 5rem;
+    justify-content: center;
+}
+.button{
     margin-top: 3rem;
     background-color: #C2A878;
     height: 3rem;
