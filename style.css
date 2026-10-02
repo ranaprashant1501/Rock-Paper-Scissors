@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    text-align: center;
+}
+
+/* Added !important to ensure it overrides flex settings when toggled by JS */
+.hide {
+    display: none !important; 
+}
+
+#nav {
+    background-color: #14281D;
+    height: 10vmin;
+    color: #C2A878;
+    font-size: xx-large;
+    text-align: center;
+    line-height: 10vmin;
+}
+
+#heading {
+    height: 6vmin;
+    display: flex;
+}
+
+#user-heading, #computer-heading {
+    width: 50vmax;
+    text-align: center;
+    line-height: 6vmin;
+    border: 2px solid black;
+    background-color: aqua;
+    font-size: x-large;
+    font-weight: 900;
+}
+
+#container1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Consolidated the duplicate #user-container and #computer-container CSS into one class */
+.player-panel {
+    border: 1px solid black;
+    height: 50vmin;
+    width: 50vmax;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+    container-type: size;
+    background-color: azure;
+}
+
+.images {
+    display: flex;
+    gap: 10cqw;
+    background-color: azure;
+}
+
+.message {
+    font-size: 10cqh;
+    background-color: azure;
+}
+
+.choice {
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer; /* Added so users know they can click */
+}
+
+/* Ensure computer choices don't look clickable before the result */
+#computer-choice-container .choice {
+    cursor: default;
+}
+
+#score-section {
+    display: flex;
+    padding-top: 4rem;
+    justify-content: center;
+    gap: 20rem;
+}
+
+.score-board {
+    width: 15vmax;
+    height: 5vmin;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    background-color: aquamarine;
+    border-radius: 1rem;
+    display: flex;
+    font-size: 2rem;
+    gap: 1rem; /* Added gap to space out the word "You:" and the number "0" */
+}
+
+#reset {
+    margin-top: 3rem;
+    background-color: #C2A878;
+    height: 3rem;
+    width: 15rem;
+    font-size: 2rem;
+    border-radius: 1rem;
+    cursor: pointer;
+}

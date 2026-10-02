@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="nav">STONE-PAPER-SCISSOR</div>
+
+    <!-- Heading showing USER and COMPUTER -->
+    <div id="heading">
+        <div id="user-heading">YOU</div>
+        <div id="computer-heading">COMPUTER</div>
+    </div>
+
+    <!-- Game section -->
+    <div id="container1">
+        <!-- USER SIDE -->
+        <!-- Active Choosing State -->
+        <div class="player-panel" id="user-choice-container">
+            <div class="images">
+                <img id="user-rock" class="choice" src="IMAGE/rock.png" alt="Rock">
+                <img id="user-paper" class="choice" src="IMAGE/paper.png" alt="Paper">
+                <img id="user-scissors" class="choice" src="IMAGE/scissors.png" alt="Scissor">
+            </div>
+            <p class="message">Choose One</p>
+        </div>
+
+        <!-- Hidden Result State -->
+        <div class="player-panel hide" id="user-result-container">
+            <div class="images">
+                <img id="user-result-img" class="choice" src="IMAGE/rock.png" alt="Rock">
+            </div>
+            <p class="message" id="user-result-msg">You Won</p>
+        </div>
+
+        <!-- COMPUTER SIDE -->
+        <!-- Active Choosing State -->
+        <div class="player-panel" id="computer-choice-container">
+            <div class="images">
+                <img id="comp-rock" class="choice" src="IMAGE/rock.png" alt="Rock">
+                <img id="comp-paper" class="choice" src="IMAGE/paper.png" alt="Paper">
+                <img id="comp-scissors" class="choice" src="IMAGE/scissors.png" alt="Scissor">
+            </div>
+            <p class="message">Computer will Automatically Choose</p>
+        </div>
+
+        <!-- Hidden Result State -->
+        <div class="player-panel hide" id="computer-result-container">
+            <div class="images">
+                <img id="comp-result-img" class="choice" src="IMAGE/rock.png" alt="Rock">
+            </div>
+            <p class="message" id="comp-result-msg">Computer Lost</p>
+        </div>
+    </div>
+
+    <!-- SCORE SECTION -->
+    <div id="score-section" class="hide">
+        <!-- YOUR SCORE SIDE -->
+        <div class="score-board">
+            <div id="your-score-msg">You:</div>
+            <div id="your-score">0</div>
+        </div>
+    
+         <!-- COMPUTER SCORE SIDE -->
+        <div class="score-board">
+            <div id="computer-score-msg">Computer:</div>
+            <div id="computer-score">0</div>
+        </div>
+    </div>
+
+    <!-- RESET BUTTON -->
+    <button id="reset" class="hide">Reset Game</button>
+
+    <script src="app.js"></script>
+</body>
+</html>
